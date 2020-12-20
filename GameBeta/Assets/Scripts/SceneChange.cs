@@ -7,6 +7,7 @@ public class SceneChange: MonoBehaviour
 
     public void RestartGame()
     {
+       
         SceneManager.LoadScene("Game");
         Debug.Log("i'm epic");
     }

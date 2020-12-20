@@ -34,7 +34,7 @@ public class SpawnManager : MonoBehaviour
         Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 1, spawnRangeX);
         Vector3 spawnPos2 = new Vector3(spawnRangeX, 1, Random.Range(-spawnRangeX, spawnRangeX));
         Vector3 spawnPos3 = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 1, 0);
-        Vector3 spawnPos4 = new Vector3(1, 1, Random.Range(-spawnRangeX, spawnRangeX));
+        Vector3 spawnPos4 = new Vector3(-20, 1, Random.Range(-spawnRangeX, spawnRangeX));
         bool gameOver = FindObjectOfType<DetectCollisions>().gameOver;
         if (Time.time <= 30 && gameOver != true)
         { 

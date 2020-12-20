@@ -24,7 +24,7 @@ public class Score : MonoBehaviour
         //check if gameover is triggered using gameOver and stop once it is
         bool gameOver = FindObjectOfType<DetectCollisions>().gameOver;
         stop = gameOver;
-         if (stop != true) { 
+         if (gameOver != true) { 
             score += Time.time;
 
             scoreText.text = "Score: " + score;

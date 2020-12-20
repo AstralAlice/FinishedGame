@@ -4,5 +4,5 @@ using UnityEngine;
 
 
 public class Link : MonoBehaviour{
-    public void WebLink() => Application.OpenURL("https://www.youtube.com/watch?v=qqOqLNqAdDo&feature=youtu.be");
+    public void WebLink() => Application.OpenURL("https://github.com/AstralAlice/FinishedGame");
 }

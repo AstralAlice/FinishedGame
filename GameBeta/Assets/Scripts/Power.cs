@@ -26,5 +26,6 @@ public class Power : MonoBehaviour
         {
             powerText.text = "Ability Ready ";
         }
+        else { powerText.text = "Not Ready"; }
     }
 }
