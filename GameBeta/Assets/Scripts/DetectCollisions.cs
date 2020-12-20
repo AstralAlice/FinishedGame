@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DetectCollisions : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class DetectCollisions : MonoBehaviour
     public AudioClip Blip;
     private AudioSource PlayerAudio;
     public TextMeshProUGUI GameOver;
+    public Button RestartButton;
     public bool gameOver = false;
     public int hp = 3;
     public bool powerReady=true;
@@ -52,6 +54,7 @@ public class DetectCollisions : MonoBehaviour
 
             //display game over and halt spawning
             GameOver.gameObject.SetActive(true);
+            RestartButton.gameObject.SetActive(true);
             gameOver = true;
    
 

@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //find out if power is usable and if it is destroy all bullets currently spawned
         bool power = FindObjectOfType<DetectCollisions> ().powerReady;
         if (Input.GetKeyDown(KeyCode.Space) && power == true)
         {
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
          
         }
 
-
+        //horizontal movement
         if (transform.position.x < -20)
         {
             transform.position = new Vector3(-20, transform.position.y, transform.position.z);
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour
 
 
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
-
+        //forward movement
         if (transform.position.z < 2)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, 2);
