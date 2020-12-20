@@ -46,6 +46,9 @@ public class DetectCollisions : MonoBehaviour
             GameObject[] death = GameObject.FindGameObjectsWithTag("bullet");
             foreach (GameObject bullet in death)
                 Destroy(bullet);
+            gameOver = true;
+            GameOver.gameObject.SetActive(true);
+            RestartButton.gameObject.SetActive(true);
             //destroy player and play boom
             this.PlayerAudio.PlayOneShot(this.Boom, 1.0f);
             Destroy(gameObject);
@@ -53,9 +56,8 @@ public class DetectCollisions : MonoBehaviour
             Debug.Log("Game Over");
 
             //display game over and halt spawning
-            GameOver.gameObject.SetActive(true);
-            RestartButton.gameObject.SetActive(true);
-            gameOver = true;
+        
+         
    
 
 
