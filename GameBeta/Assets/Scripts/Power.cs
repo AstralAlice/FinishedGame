@@ -24,7 +24,7 @@ public class Power : MonoBehaviour
         bool power = FindObjectOfType<DetectCollisions>().powerReady;
         if (power == true)
         {
-            powerText.text = "Ability Ready ";
+            powerText.text = "Ability Ready(spacebar) ";
         }
         else { powerText.text = "Not Ready"; }
     }
